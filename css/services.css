@@ -1,0 +1,198 @@
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* Color Palette */
+:root {
+  --accent: #896C6C;         /* deep taupe (headings, primary accent) */
+  --accent-dark: #6f5555;    /* hover/darker accent */
+  --soft-rose: #E5BEB5;      /* rose beige */
+  --parchment: #EEE6CA;      /* pale sand (cards) */
+  --ivory: #F5FAE1;          /* soft cream (bg) */
+  --charcoal: #333333;       /* body text */
+  --muted: #6b6b6b;
+  --paper: #ffffff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --shadow-soft: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+body {
+  background: var(--ivory) !important;
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--accent);
+}
+
+p {
+  color: var(--charcoal);
+}
+
+/* Top nav */
+.top-nav {
+  background-color: var(--paper);
+  z-index: 2;   
+  border-bottom: 2px solid rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.nameplate {
+  width: 90vw;
+  margin: auto;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 20%;
+  background: linear-gradient(135deg,var(--accent),var(--accent-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  font-weight: bold;
+  box-shadow: var(--shadow-soft);
+}
+
+.brand a {
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.brand a:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* Services Section */
+.services {
+  background: linear-gradient(180deg, var(--ivory, #fdfcf8), var(--parchment, #f5f0e6));
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.service-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--paper);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.service-block h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.service-block p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-size: large;
+}
+
+.service-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 5rem;
+}
+
+ .btn {
+  background: var(--accent);
+  color: var(--paper);
+  padding: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: var(--accent-dark);
+  box-shadow: 0 8px 20px rgba(137, 108, 108, 0.5);
+  color: var(--paper);
+}
+
+ /* Footer */
+  .footer{
+    height: 20vh;
+    padding: 2rem;
+    color: var(--paper); 
+    background: var(--accent);
+    text-align: center;
+  }
