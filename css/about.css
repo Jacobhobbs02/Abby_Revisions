@@ -177,3 +177,103 @@ p {
   background: var(--accent);
   text-align: center;
 }
+
+/* MOBILE */
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .about-title {
+    margin-top: 2rem;
+    height: auto;
+  }
+
+  .text-section {
+    width: 90%;
+    text-align: center;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .img-frame {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+  }
+}
+
+/* Phones and small devices */
+@media (max-width: 600px) {
+  .nameplate {
+    flex-direction: column;
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .brand {
+    gap: 0.8rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .about-title h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .text-section {
+    width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .img-frame {
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+  }
+
+  #photo {
+    object-position: top center;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+}

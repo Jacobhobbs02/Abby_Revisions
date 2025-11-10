@@ -196,3 +196,110 @@ p {
     background: var(--accent);
     text-align: center;
   }
+
+/* MOBILE */
+
+@media (max-width: 992px) {
+  /* Tablet adjustments */
+  .nameplate {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .intro {
+    width: 80vw;
+  }
+
+  .service-block {
+    width: 85%;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Smaller tablets and large phones */
+  .nav-links a {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .service-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-block p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Phones */
+  .top-nav {
+    position: relative;
+    padding: 1rem 0;
+  }
+
+  .nameplate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .services {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .service-block {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .contact-section {
+    margin-top: 3rem;
+  }
+
+  .footer {
+    height: auto;
+    padding: 1.5rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

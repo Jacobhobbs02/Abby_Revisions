@@ -187,3 +187,116 @@ margin-bottom: 1rem;
   background: var(--accent);
   text-align: center;
 }
+
+/* MOBILE */
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+  .nameplate {
+    width: 95vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+  }
+
+  .contact-section {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .contact-card {
+    max-width: 80%;
+    padding: 2.5rem;
+  }
+
+  .contact-card p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .footer {
+    height: auto;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Phones and small devices */
+@media (max-width: 600px) {
+  .nameplate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .brand {
+    gap: 0.8rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand a {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    padding: 0.8rem;
+  }
+
+  .contact-section {
+    padding: 3rem 1rem;
+    height: auto;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 95%;
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-links span {
+    display: none;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+}
